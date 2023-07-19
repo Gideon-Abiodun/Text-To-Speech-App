@@ -97,7 +97,8 @@ select{
 @media screen and (max-width: 500px) {
 
     .hero {
-        margin: -5rem 0;
+        justify-content: flex-start;
+        padding-top: 8rem;
     }
 
     .hero h1{
