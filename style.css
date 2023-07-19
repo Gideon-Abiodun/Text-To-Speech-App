@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-145deg, #04befe, #00259b);
+    /* background: linear-gradient(45deg, #010758, #490d61); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.hero h1 span{
+    color: #001e82;
+}
+
+textarea{
+    width: 600px;
+    height: 250px;
+    background-color: #eaf3f7;
+    resize: none;
+    font-size: 15px;
+    color: #000;
+    border: none;
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+textarea::placeholder{
+    font-size: 16px;
+    columns: #ddd;
+}
+
+.row {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+button{
+    background: linear-gradient(-45deg, #107bb5, #00259b);
+    /* background: #00259b; */
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+button img {
+    width: 16px;
+    margin-right: 10px;
+}
+
+select{
+    flex: 1;
+    color: #fff;
+    background: #001e82;
+    /* background: #403684; */
+    height: 50px;
+    padding: 0 20px;
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    appearance: none;
+    background-image: url(./images/dropdown.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: calc(100% - 20px);
+    background-position-y: 20px;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .hero {
+        margin: -5rem 0;
+    }
+
+    .hero h1{
+        font-size: 28px;
+    }
+    textarea{
+        width: 350px;
+    }
+
+    .row {
+        width: 330px;
+        margin-right: 2rem;
+    }
+
+    button{
+        padding: 10px 15px;
+        font-size: 0.8rem;
+    }
+
+    button img {
+        width: 5px;
+    }
+
+    select {
+        font-size: 0.57rem;
+    }
+}
